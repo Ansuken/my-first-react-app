@@ -5,7 +5,8 @@ class Banner extends Component {
     render() {
         return(
             <div className="banner">
-                <h1>Banner text</h1>
+                <h1>Awesome!</h1>
+                <p>This is my fucking first React App</p>
             </div>
         );
     }

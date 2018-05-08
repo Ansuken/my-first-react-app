@@ -7,7 +7,7 @@ import MainPage from './Pages/Main/Main';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App animated fadeIn">
         <Header/>
         <Banner/>
         <div className="container main-container">

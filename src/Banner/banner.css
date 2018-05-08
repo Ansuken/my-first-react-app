@@ -3,9 +3,16 @@
     background-size: cover;
     background-position-y: 50%;
     text-align: center;
+    padding: 90px 0px;
 }
 
 .banner h1 {
-    padding: 90px 0px;
-    color: #f8cd51;
+
+    color: #19FFC1;
+    font-weight: 100;
+}
+
+.banner p {
+
+    color: rgba(255, 255, 255, 0.589);
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './header.css';
+import Logo from '../Logo/Logo';
 import { 
     Navbar,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink, } from 'reactstrap';
@@ -12,15 +12,17 @@ class Header extends Component {
         return(
             <React.Fragment>
                 <Navbar className="navbar-color" light expand="md">
-                    <NavbarBrand href="/">datio</NavbarBrand>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/components/">Item 1</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/components/">Item 2</NavLink>
-                        </NavItem>
-                    </Nav>
+                    <div className="container">
+                        <Logo/>
+                        <Nav className="ml-auto" navbar>
+                            <NavItem>
+                                <NavLink href="/my-profile/">Mi perfil</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/logout/">Desconectar</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </div>
                 </Navbar>
             </React.Fragment>
         );
