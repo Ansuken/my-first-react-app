@@ -21,6 +21,8 @@ class MainPage extends Component {
           <PageTitle title="Shitty Form"/>
           <MainForm/>
           <hr />
+          <h3>Employee list</h3>
+          <hr />
           <Table content={this.state.tableContent}/>
         </React.Fragment>
     );
