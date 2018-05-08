@@ -31,6 +31,13 @@ class MainForm extends Component {
     render() {
         return(
             <React.Fragment>
+                <div className="result">
+                    Hello {
+                        this.state.firstName || this.state.lastName 
+                            ? this.state.firstName + ' ' + this.state.lastName 
+                            : '...'
+                        }
+                </div>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                         <Label for="firstName">Insert your name: </Label>
@@ -66,13 +73,6 @@ class MainForm extends Component {
                         </div>
                     </div>
                 </Form>
-                <div className="result">
-                    Hello {
-                        this.state.firstName || this.state.lastName 
-                            ? this.state.firstName + ' ' + this.state.lastName 
-                            : '...'
-                        }
-                </div>
             </React.Fragment>
         );
     }
