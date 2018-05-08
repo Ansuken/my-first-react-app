@@ -1,0 +1,11 @@
+.banner{
+    background-image: url('../assets/imgs/banner.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+    text-align: center;
+}
+
+.banner h1 {
+    padding: 90px 0px;
+    color: #f8cd51;
+}
